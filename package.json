@@ -1,0 +1,31 @@
+{
+  "name": "pair-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "multer": "^1.4.2",
+    "pg": "^7.12.1",
+    "sequelize": "^5.16.0",
+    "sequelize-cli": "^5.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatau2/pair-project-phase-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatau2/pair-project-phase-1/issues"
+  },
+  "homepage": "https://github.com/fatau2/pair-project-phase-1#readme"
+}

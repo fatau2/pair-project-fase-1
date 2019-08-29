@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="solid">
+        <tr>
+        <th>ID</th>
+        <th>Judul</th>
+        <th>Gambar</th>
+        <th>Action</th>
+        </tr>
+        <% images.forEach(image =>{ %>
+        <tr>
+            <td><%= image.id %></td>
+            <td><%= image.name %></td>
+            <td><img src="data:image/png;base64,<%- image.source %>"/></td>
+            <td><a href="/images/update/<%= image.id %>">Update</a>  <a href="/images/delete/<%= image.id %>" onclick="return confirm('Are you sure you want to delete this image?')">Delete</a></td>
+        </tr>
+        <% }) %>
+    </table>
+    <p>
+        <button onclick="location.href='/images/upload-gambar'" type="button">
+            Upload image</button>
+    </p>
+</body>
+</html>
