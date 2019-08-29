@@ -5,5 +5,12 @@
     "database": "imageDB",
     "host": "127.0.0.1",
     "dialect": "postgres"
+  },
+  "production": {
+    "username": "lpmqocyhlhwyeg",
+    "password": "4c8d0ea87259a222b74f759b0b83992afddf85c2f42b36a9405eead98f399ef2",
+    "database": "d20jhena7p7dfe",
+    "host": "ec2-174-129-18-42.compute-1.amazonaws.com",
+    "dialect": "postgres"
   }
 }
